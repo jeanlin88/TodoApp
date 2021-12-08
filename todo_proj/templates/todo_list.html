@@ -25,14 +25,13 @@
       <form action="/addTodoItem/" method="post">
         {% csrf_token %}
         <div class="container input-group w-50">
-          <textarea
+          <input
             type="text"
             class="form-control"
             placeholder="Todo thing"
             name="content"
-            rows="2"
             required
-          ></textarea>
+          />
           <button class="btn btn-primary" type="button submit">
             Add Todo Item
           </button>
