@@ -1,2 +1,2 @@
-./myvenv/*
-__pycache__
+/myvenv/*
+__ptcache__
