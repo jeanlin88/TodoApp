@@ -25,8 +25,4 @@ urlpatterns = [
     path('finishTodoItem/<int:i>/', finishTodoView),
     path('deleteTodoItem/<int:i>/', deleteTodoView),
     path('', include('todo.urls'))
-    #path('api/v1/todo/', include('todo.api_urls')),
-    #path('api/v1/', include([
-    #    path('todo/', include('todo.api_urls')),
-    #])),
 ]
