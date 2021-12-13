@@ -1,0 +1,20 @@
+.fixed-height{
+    height: 120px;
+}
+.content{
+    height: 80px;
+    overflow: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.grid-row{
+    background-color: rgb(240, 248, 245);
+}
+.grid-row:nth-child(even){
+    background-color: rgb(222, 245, 236);
+}
+.grid-row:hover{
+    background-color: rgb(230, 230, 250);
+}
+.camel{
+    color:#A16B47;
+}
