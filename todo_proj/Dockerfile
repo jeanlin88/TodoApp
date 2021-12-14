@@ -1,11 +1,9 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
-ENV PYTHONUNBUFFERRED 1
-
-RUN apt-get update -y
-RUN apt-get install python3.8 -y
-RUN apt-get install python3-pip -y
-RUN pip3 install --upgrade pip
+RUN apt-get update -y && \
+    apt-get install python3.8 -y && \
+    apt-get install python3-pip -y && \
+    pip3 install --upgrade pip
 
 RUN useradd -ms /bin/bash myuser
 USER myuser
@@ -17,4 +15,4 @@ COPY . .
 
 RUN pip3 install -r requirements.txt
 
-CMD ./start.sh
+ENTRYPOINT [ "./start.sh" ]
